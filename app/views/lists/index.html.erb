@@ -1,12 +1,15 @@
-<h2 class="text-center my-4">My lists</h2>
-  <div class="container">
-    <ul class="row">
+<div id="banner-index-list">
+  <h1>Save any kind of movies</h1>
+</div>
+  <h2 class="text-center my-4">My lists</h2>
+    <div class="container">
+      <ul class="row">
 
-      <% @lists.each do |list| %>
-        <div class="card-list-index col-3 my-4 mx-3">
-          <li class="list-unstyled text-center"><%= list.name%></li>
-        </div>
-      <% end %>
-    </ul>
-  </div>
-<%=link_to "Create a new list", new_list_path, class: "button-create-list"%>
+        <% @lists.each do |list| %>
+          <div class="card-list-index col-3 my-4 mx-3">
+            <li class="list-unstyled text-center"><%= list.name%></li>
+          </div>
+        <% end %>
+      </ul>
+    </div>
+  <%=link_to "Create a new list", new_list_path, class: "button-create-list"%>
