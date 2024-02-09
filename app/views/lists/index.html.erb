@@ -1,7 +1,10 @@
 <div id="banner-index-list">
   <h1>Save any kind of movies</h1>
 </div>
-  <h2 class="text-center my-4">My lists</h2>
+  <div class="container">
+    <h2 class="text-center my-4">My lists</h2>
+    <%=link_to "Create a new list", new_list_path, class: "button-create-list"%>
+  </div>
     <div class="container">
       <ul class="row">
 
@@ -12,4 +15,3 @@
         <% end %>
       </ul>
     </div>
-  <%=link_to "Create a new list", new_list_path, class: "button-create-list"%>
